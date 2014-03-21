@@ -3,21 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="">
     <meta name="author" content="ComfyBall 3-20-2014">
 
     <title>ComfyBall - Empowering Patients</title>
 
-    <!-- Bootstrap core CSS -->
-
-
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <script src="../libs/jquery.min.js"></script>
-     
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">     
 </head>
 
 <body>
@@ -25,15 +20,37 @@
     <!-- Full Page Image Header Area -->
     <div id="top" class="header">
         <!-- Social Media -->
-            <div id="social-media">
-                <a href="http://twitter.com/thecomfyball" class="a-social" target="_blank">
-                    <i class="fa fa-twitter fa-2x"></i>
-                </a> 
+            <div id="social-media-top">
                 <a href="mailto:hello@comfyball.com" class="a-social" target="_blank">
                     <i class="fa fa-envelope fa-2x"></i>
                 </a>
+                <a href="http://twitter.com/thecomfyball" class="a-social" target="_blank">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </a> 
             </div>
         <!-- /Social Media -->
+        <!-- Side Menu -->
+        <a id="menu-toggle" href="#" class="btn btn-success btn-lg toggle"><i class="fa fa-sitemap"></i></a>
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <div id="">
+                    <a id="menu-close" href="#" class="btn btn-danger btn-lg pull-left toggle"><i class="fa fa-times"></i></a>
+                </div>
+                <li class="sidebar-brand">Site Map
+                </li>
+                <li><a href="#top">Home</a>
+                </li>
+                <li><a href="#about">About</a>
+                </li>
+                <li><a href="#team">Team</a>
+                </li>
+                <li><a href="#board">Advisory Boad</a>
+                </li>
+                <li><a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /Side Menu -->
         <!-- Needs a better vertical alignment mechanism -->
     <Br>
     <br>    
@@ -59,14 +76,14 @@
                 </div>
             </div>
         </div>
-    <!-- Down Arrow -->
-    <div id="down-arrow">
-        <a href="#about">
-            
-            <br><i class="fa fa-arrow-down fa-2x text-center"></i>
-        </a> 
-    </div>
-    <!-- /Down Arrow -->
+        <!-- Down Arrow -->
+        <div id="down-arrow">
+            <a href="#about">
+                
+                <br><i class="fa fa-arrow-down fa-3x text-center"></i>
+            </a> 
+        </div>
+        <!-- /Down Arrow -->
     </div>
     <!-- /Full Page Image Header Area -->
 
@@ -96,15 +113,15 @@
     </div>
     <!-- /Quote -->
     
-    <!-- Call to Action -->
+    <!-- Newsletter Signup -->
     <div class="intro">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                <h2>Want to follow ComfyBall? <br></h2>
+                <h2>Want to follow ComfyBall?</h2>
         <!-- Begin MailChimp Signup Form -->
                     <form action="http://comfyball.us3.list-manage1.com/subscribe/post?u=49968802cefb0dea4761e6843&amp;id=9c7325ee96" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline validate" target="_blank" novalidate>
-                        <label for="sr-only mce-EMAIL"><h3>Join our mailing list:<h3></label><Br>
+                        <label for="sr-only mce-EMAIL" class="control-label"><h3><em>Join</em> our mailing list:<h3></label><Br>
                         <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <div style="position: absolute; left: -5000px;"><input type="text" name="b_49968802cefb0dea4761e6843_9c7325ee96" value=""></div>
@@ -117,63 +134,13 @@
             </div>
         </div>
     </div>
-    <!-- /Call to Action -->
-
-
-
-
-    <!-- Affiliations
-    <div class="call-to-action">
-        <div class="container">
-         <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Our Affiliations</h2>
-                    <hr>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 col-md-3 col-md-offset-3 text-center">
-                    <div class="thumbnail">
-
-                      <img src="img/Hi.png" height="128" width="128" alt="Harvard Innovation Lab" class="img-responsive">
-
-                        <div class="caption">
-                            <h4>Harvard Innovation Lab</h4>
-                        <!--
-                            <hr>
-                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        -->
-                        </div>
-
-                    </div>
-                </div>
- <!--
-                <div class="col-sm-6 col-md-3 text-center">
-                    <div class="thumbnail">
-
-                        <img src="img/HackingPediatrics.png" height="128" width="116" alt="Hacking Pediatrics" class="img-thumbnail">
-
-                        <div class="caption">
-                            <h4>Hacking Pediatrics</h4>
-                        <!--
-                            <hr>
-                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        -->
-                        </div>
- <!--
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        Affiliations -->
+    <!-- /Newsletter Signup -->
 
     <!-- Team -->
-        <div id="services" class="services">
+        <div id="team" class="services">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
+                <div class="col-md-6 col-md-offset-3 text-center">
                     <h2>Meet the ComfyBall Team</h2>
                     <hr>
                 </div>
@@ -181,7 +148,7 @@
             <div class="row">
                 <div class="col-md-2 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-picture-o"></i>
+                        <img src="img/team/mahekshah.jpg" width="100px" alt="Mahek Shah, MD." class="img-thumbnail">
                         <h4>Mahek Shah, MD</h4>
                         <p>Co-founder <br> Chief Executive Officer<br><hr>Entrepreneur-in-Residence, Harvard Innovation Lab<br>
 
@@ -190,35 +157,35 @@
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-picture-o"></i>
+                        <img src="img/team/cfields.jpg" width="100px" alt="Chris Fields" class="img-thumbnail">
                         <h4>Chris Fields</h4>
-                        <p>Chief Technology Officer<hr>Software & Hardware Development</p>
+                        <p>Chief Technology Officer<hr>Software & Hardware Dev.<br>BS. Mechanical Engineering<br> MS. Computer Science '16.</p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-picture-o"></i>
+                        <img src="img/team/SamanthaDempsey.jpg" width="100px" alt="Samantha Dempsey" class="img-thumbnail">
                         <h4>Samantha Dempsey</h4>
                         <p>Co-founder,<br> Lead Designer<br><hr>Industrial Designer at Mad*Pow, Rhode Island School of Design alumna. </p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-picture-o"></i>
+                        <img src="img/team/dubowec.jpg" width="100px" alt="Andrew Dubowec" class="img-thumbnail">
                         <h4>Andrew Dubowec</h4>
                         <p>Co-founder <br> Director of Business Development<br><hr>Harvard Business School, MBA '14<br>Formerly at Google, Monitor Group</p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-picture-o"></i>
+                        <img src="img/team/IGH Headshot - Community.jpg" width="100px" alt="Andrew Dubowec" class="img-thumbnail">
                         <h4>Israel Green-Hopkins, MD</h4>
                         <p>Co-founder<hr>Pediatric Emergency Room Physician, Boston Children's Hospital</p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-picture-o"></i>
+                        <img src="img/team/johnscannell.jpg" width="100px" alt="John Scannell, RN" class="img-thumbnail">
                         <h4>John Scannell, RN</h4>
                         <p>Co-founder<hr>
                         Pediatric Nurse of 15 yrs, Boston Children's Hospital </p>
@@ -230,30 +197,21 @@
             </div>
         </div>
     </div>
-    <!-- /Team -->
-    <!-- blank filler space
-    <div class="call-to-action">
-        <div class="container">
-            <div class="row">
-                <br>
-            </div>
-        </div>
-    </div>
- /blank filler space -->
-<div class="callout">
+    <!-- Quote 2 -->
+    <div class="callout">
         <div class="vert-text">
             <blockquote class="blockquote-reverse">
                 <h2><p><strong>"25-46% of children under 18 suffer from chronic pain, or pain experienced daily for more than 3 months."</p>
                 <footer><cite title="Source Title">Children's National Medical Center</cite></strong></h2></footer>
             </blockquote>
-        
         </div>
     </div>
+    <!-- /Quote 2 -->
     <!-- Board -->
-        <div id="services" class="services">
+        <div id="board" class="services">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
+                <div class="col-md-6 col-md-offset-3 text-center">
                     <h2>Advisory Board</h2>
                     <hr>
                 </div>
@@ -261,43 +219,43 @@
             <div class="row">
                 <div class="col-md-2 col-md-offset-1 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-picture-o"></i>
+                        <img src="img/team/jimmydestephens.jpg" width="100px" alt="Jimmy DeStephens" class="img-thumbnail">
                         <a href="http://www.covidien.com" target="_blank">
                         <h4>Jimmy DeStephens</h4></a>
-                        <p><hr>Director Corporate Business Development & Licensing, Covidien</p>
+                        <p>Director Corporate Business Development & Licensing, Covidien</p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-picture-o"></i>
+                        <img src="img/team/mikedocktor.jpeg" width="100px" alt="Michael Docktor, MD" class="img-thumbnail">
                         <a href="http://www.linkedin.com/pub/michael-docktor-md/1a/898/822" target="_blank">
-                        <h4>Michael Docktor MD</h4></a>
-                        <p><hr>Director of Clinical Mobile Solutions & Pediatric Gastroenterologist, Boston Children’s Hospital.</p>
+                        <h4>Michael Docktor, MD</h4></a>
+                        <p>Director of Clinical Mobile Solutions & Pediatric Gastroenterologist, Boston Children’s Hospital.</p>
                     </div>
                 </div>
 
                 <div class="col-md-2 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-picture-o"></i>
+                        <img src="img/team/Fried_Naomi.jpg" width="100px" alt="Naomi Fried, Phd" class="img-thumbnail">
                         <a href="http://www.childrenshospital.org/research-and-innovation/research-initiatives/innovation-acceleration-program/our-team" target="_blank">
-                        <h4>Naomi Fried PhD</h4> </a>
-                        <p></a><hr>Chief Innovation Officer, Boston Children's Hospital</p>
+                        <h4>Naomi Fried, PhD</h4></a>
+                        <p>Chief Innovation Officer, Boston Children's Hospital</p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-picture-o"></i>
+                        <img src="img/team/AidanP.jpg" width="100px" alt="Aidan Petrie" class="img-thumbnail">
                         <a href="http://www.ximedica.com/People/Leadership/AidanPetrie.aspx" target="_blank">
-                        <h4>Aidan Petrie </h4></a>
-                        <p><hr>Co-founder & Chief Innovation Officer, Ximedica</p>
+                        <h4>Aidan Petrie</h4></a>
+                        <p>Co-founder & Chief Innovation Officer, Ximedica</p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-picture-o"></i>
+                        <img src="img/team/charlie-schick.jpg" width="100px" alt="Charlie Schick, PhD" class="img-thumbnail">
                         <a href="http://www.fastcompany.com/1829762/how-ibms-big-data-guy-found-career-chaos" target="_blank">
-                        <h4>Charlie Schick PhD</h4></a>
-                        <p></a><hr>Worldwide Director of Big Data, Healthcare & Life Sciences, IBM</p>
+                        <h4>Charlie Schick, PhD</h4></a>
+                        <p>Worldwide Director of Big Data, Healthcare & Life Sciences, IBM</p>
                     </div>
                 </div>
 
@@ -305,127 +263,75 @@
         </div>
     </div>
     <!-- /Board -->
-
+    <!-- Partners, Supporters, Press -->
     <div class="call-to-action">
         <div class="container">
             <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2>Partners & Supporters</h2>
-                        <hr>
-                    </div>
-                    
+                <div class="col-md-12 text-center">
+                    <h2>Partners & Supporters</h2>
+                    <hr>
                 </div>
-                
-                <div class="row">
-                    <div class="col-sm-4 col-md-4 col-md-offset-0 text-center">
-                        <div class="row-padded">
-                        <!--<img width="128" height="128" class="img-responsive" alt="Boston Children's Hospital" src="img/bch.jpg"><-->
-                            <a href="http://www.bostonchildrens.org/" target="_blank">
-                                <img width="228" height="128" class="jumpIcon polaroid" alt="Boston Children's Hospital" src="img/bch.jpg">
-                            </a></h5>                         
-        
-                        </div>
-                    </div>
-
-              
-                    <div class="col-sm-4 col-md-4 col-md-offset-0 text-center">
-                        
-                        <a href="http://www.hackingpediatrics.com/" target="_blank">
-                            <img width="116" height="128" class=j"umpIcon polaroid" alt="Hacking Pediatrics" src="img/HackingPediatrics.png">
-                        </a></h5>
-                                
-                                <!--<p>Bringing innovators together to transform pediatric healthcare</p><-->
-                    </div>
-                
-                    <div class="row-padded">
-                        <div class="col-sm-4 col-md-4 col-md-offset-0 text-center">
-                            
-                            <a href="http://i-lab.harvard.edu/" target="_blank">
-                                <img width="128" height="128" class="jumpIcon polaroid" alt="Harvard Innovation Lab" src="img/Hi.png">
-                            </a></h5>
-                                
-                                <!--<p>Fostering Innovation & Entrepreneurship across Harvard </p><-->
-
-                        </div>
-                    </div>
-            </div>           
-
-        <!--Press><-->
-        <br>
-        <div class="row">        
-            <div class="col-md-12 text-center">
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-md-4 text-center">
+                    <a href="http://www.bostonchildrens.org/" target="_blank">
+                        <img width="228" height="128" alt="Boston Children's Hospital" src="img/bch.jpg">
+                    </a>                    
+                </div>
+                <div class="col-sm-2 col-md-4 text-center">
+                    <a href="http://www.hackingpediatrics.com/" target="_blank">
+                        <img width="116" height="128" class=j"umpIcon polaroid" alt="Hacking Pediatrics" src="img/HackingPediatrics.png">
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-4 col-md-offset-0 text-center">
+                    <a href="http://i-lab.harvard.edu/" target="_blank">
+                        <img width="128" height="128" class="jumpIcon polaroid" alt="Harvard Innovation Lab" src="img/Hi.png">
+                    </a>
+                </div>
+            </div>   
+            <div class="row">        
+                <div class="col-md-12 text-center">
                     <h2>Press</h2>
                     <hr>
-            </div>
-                <div class="row">
-
-                    <div class="col-sm-6 col-md-6 col-md-offset-0 text-center">
-                        
-                        <a href="http://www.bizjournals.com/boston/blog/health-care/2013/12/here-are-six-standouts-from-mits.html" target="_blank">
-                        <img width="356" height="128" class="jumpIcon polaroid" alt="Boston Business Journal" src="img/bbj.png"></h5>
-                                
-                            <p>Six standout MIT healthcare innovations</p></a>
-                    </div>
-                
-                    <div class="row-padded">
-                        <div class="col-sm-6 col-md-6 col-md-offset-0 text-center">
-                            
-                            <a href="http://vectorblog.org/2013/11/the-comfy-ball-a-hack-to-help-children-express-their-pain/" target="_blank">
-                            <img width="228" height="128" class="jumpIcon polaroid" alt="Boston Children's Blog" src="img/bch.jpg"></h5>
-                                
-                                <p>The Comfy Ball: A ‘hack’ to help children express their pain</p></a>
-
-                        </div>
-                    </div>
-                    
-                <!--    <div class="col-sm-6 col-md-6 text-center">
-                        <div class="media well press">
-                            <a class="pull-left">
-                                <img width="126" height="128" class="img-responsive" alt="Boston Business Journal" src="img/bbj.png">
-                            </a>
-                            <div class="media-body">
-                                <a href="http://www.bizjournals.com/boston/blog/health-care/2013/12/here-are-six-standouts-from-mits.html" target="_blank">
-                                    <h4 class="media-heading">
-                                        Six standout MIT healthcare innovations  &nbsp<i class="fa fa-external-link"></i>
-                                    </h4>
-                                </a>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="media well press">
-                            <a class="pull-left">
-                                <img width="116" height="150" class="img-responsive" alt="Hacking Pediatrics" src="img/bch.jpg">
-                            </a>
-                            <div class="media-body ">
-                                <a href="http://vectorblog.org/2013/11/the-comfy-ball-a-hack-to-help-children-express-their-pain/" target="_blank">
-                                    <h4 class="media-heading">The Comfy Ball: A ‘hack’ to help children express their pain  &nbsp<i class="fa fa-external-link"></i>
-                                    </h4>
-                                </a>
-                            </div> 
-                        </div>
-                    </div><-->
                 </div>
-            </div>    
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-md-6 text-center">
+                    <a href="http://www.bizjournals.com/boston/blog/health-care/2013/12/here-are-six-standouts-from-mits.html" target="_blank">
+                        <img width="356" height="128" class="jumpIcon polaroid" alt="Boston Business Journal" src="img/bbj.png">
+                        <h4><p>Six standout MIT healthcare innovations</p></h4>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-6 text-center">
+                    <a href="http://vectorblog.org/2013/11/the-comfy-ball-a-hack-to-help-children-express-their-pain/" target="_blank">
+                        <img width="228" height="128" class="jumpIcon polaroid" alt="Boston Children's Blog" src="img/bch.jpg">
+                        <h4><p>The Comfy Ball: A ‘hack’ to help children express their pain</p></h4>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-
+    <!-- /Partners, Supporters, Press -->
+    <!-- Quote 2 -->
+    <div class="callout">
+        <div class="vert-text">
+            <blockquote class="blockquote-reverse">
+                <h2><p><strong>"25-46% of children under 18 suffer from chronic pain, or pain experienced daily for more than 3 months."</p>
+                <footer><cite title="Source Title">Children's National Medical Center</cite></strong></h2></footer>
+            </blockquote>
+        </div>
+    </div>
+    <!-- /Quote 2 -->
     <!-- Map -->
     <div id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=125 Western Ave, Boston, MA&layer=c&t=m&z=16&source=embed&output=svembed"></iframe>
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=125 Western Ave, Boston, MA&layer=c&t=m&z=1&source=embed&output=svembed"></iframe>
         <br />
-        <!--
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Apple,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Apple,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
-        </iframe>
--->
-
     </div>
     <!-- /Map -->
 
     <!-- Footer -->
         <footer>
-            <div class="container">
+            <div id="contact" class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 text-center ">
                         <address>
@@ -433,22 +339,26 @@
                           Harvard Innovation Lab<br>
                           125 Western Ave<br>
                           Boston, MA 02134<br>
-                          <!--<abbr title="Phone">P:</abbr><--> 
                         </address>
                         <address>
-                          <strong>Would you like to email us?</strong><br>
-                          <a href="mailto:hello@comfyball.com">hello@comfyball.com</a>
+                        <!-- Social Media -->
+                            <a href="mailto:hello@comfyball.com" class="social-media-bottom" target="_blank">
+                                <i class="fa fa-envelope fa-2x"></i>
+                            </a>
+                            <a href="http://twitter.com/thecomfyball" class="social-media-bottom" target="_blank">
+                                <i class="fa fa-twitter fa-2x"></i>
+                            </a> 
+                        <!-- /Social Media --><br>
+                        <strong>Email us or find Comfyball on Twitter</strong>
                         </address>
                     </div>
+                </div>
             </div>
         </footer>
     <!-- /Footer -->
 
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script src="js/jquery-1.10.2.js"></script>
     <script>
     $("#menu-close").click(function(e) {
         e.preventDefault();

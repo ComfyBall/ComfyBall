@@ -16,6 +16,7 @@ body {
 .a-social {
   color: #ffffff;
   text-decoration: none;
+  margin: 5px;
 }
 
 .jar {
@@ -47,20 +48,25 @@ body {
 #down-arrow {
     text-align: center;
     bottom: 0;
-    left: 50%;
-    margin: ;
+    left: 48%;
+    margin: 0;
     padding: 0;
     position: absolute;
     z-index: 2;
 }
 
-#social-media {
+#social-media-top {
     top: 0;
     left: 0;
-    margin: 0 0 26px 20px;
-    padding: 0;
+    padding: 25px;
+    margin: 0;
+    padding: 10px;
     position: absolute;
     z-index: 2;
+}
+.social-media-bottom {
+    padding: 0;
+    margin: 5px;
 }
 
 #menu-toggle-twitter {
@@ -130,12 +136,19 @@ blockquote.pull-right {
 
 
 /* Side Menu */
+#sidebar-wrapper-top {
+  width: 250px;
+  background: #black;
+  opacity: 1;
+
+}
 
 #sidebar-wrapper {
   margin-right: -250px;
   right: 0;
   width: 250px;
   background: #000;
+  opacity: .6;
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -231,7 +244,7 @@ blockquote.pull-right {
 /* Intro */
 
 .intro {
-  padding: 50px 0;
+  padding: 25px 0;
 }
 
 /* Services */
@@ -263,9 +276,9 @@ i.service-icon {
 .callout {
   color: #ffffff;
   display: table;
-  height: 400px;
+  height: 275;
   width: 100%;
-  background: url(../img/IMG_0375.jpg) no-repeat center center fixed; 
+  background: url(../img/charles2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -308,7 +321,7 @@ i.service-icon {
 /* Footer */
 
 footer {
-  padding: 50px 0;
+  padding: 25px;
 }
 
 .top-scroll {
